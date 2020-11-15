@@ -1,0 +1,632 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://panmux.github.io/pnote/">
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>pnote</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2020-11-03-notes-when-using-termux-on-android" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://panmux.github.io/pnote" title="pnote" class="md-header-nav__button md-logo" aria-label="pnote">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            pnote
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              2020-11-03 Notes - When Using Termux On Android
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://panmux.github.io/pnote" title="pnote" class="md-nav__button md-logo" aria-label="pnote">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    pnote
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="." class="md-nav__link md-nav__link--active">
+      2020-11-03 Notes - When Using Termux On Android
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="2020-11-02-build-apk-online/" class="md-nav__link">
+      2020 11 02 build apk online
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="2020-11-03-iSH-Note-When-Using-iSH/" class="md-nav__link">
+      Notes When Using iSH on iPadOS
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="2020-11-15-Git%20server%20on%20Android/" class="md-nav__link">
+      Set up a Git server on Android
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="2020-11-15-vim-python_termux-youcompleteme-how-to/" class="md-nav__link">
+      2020 11 15 vim python termux youcompleteme how to
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="Fix%20module_not_found%20nodejs%20installed%20via%20nvm%20on%20Ubuntu/" class="md-nav__link">
+      Fix module_not_found nodejs installed via nvm on Ubuntu 20.04.md
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="To%20install%20Eclipse%20on%20Ubuntu%2020.04/" class="md-nav__link">
+      Install Eclipse by installer package on Ubuntu 20.04
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="mkdocs-material/" class="md-nav__link">
+      Git page with mkdocs-material
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="2020-11-03-notes-when-using-termux-on-android">2020-11-03 Notes - When Using Termux On Android</h1>
+<p><a href="https://termux.com">Termux</a> on Android partly brings the power of a linux pc to Android tablets. With Termux, we can run python, php, nodejs, git, etc... and even Ubuntu (GUI via VNC) on one's Android powered devices.</p>
+<p>Quote from its F-droid:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Termux combines powerful terminal emulation with an extensive Linux package collection.
+</code></pre></div>
+</td></tr></table>
+<h1 id="here-are-some-of-my-notes-when-using-this-interesting-app">Here are some of my notes when using this interesting app.</h1>
+<h1 id="install">Install</h1>
+<p><a href="https://termux.com">Termux</a></p>
+<p>I used the F-droid link to install Termux and its plugins.</p>
+<h1 id="do-these-things-after-the-installation">Do these things after the installation</h1>
+<p>This command will ask for storage permission for Termux:</p>
+<p><code>termux-setup-storage</code></p>
+<p>If you have root access, grant root access:</p>
+<p><code>su</code></p>
+<p>After that run exit command to log out root, and restart you Termux. Run it 2 times: </p>
+<p><code>exit</code></p>
+<p>Then update &amp; upgrade packages</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pkg update
+
+pkg upgrade
+</code></pre></div>
+</td></tr></table>
+<p>If you want to add more repositories:
+<code>pkg install unstable-repo</code></p>
+<p>If you have root access:
+<code>pkg install root-repo</code></p>
+<h1 id="create-some-config-files">Create some config files</h1>
+<h3 id="bash_profile">~/.bash_profile</h3>
+<p>In your root dir, modify or create this dot file <code>~/.bash_profile</code>, you can add commands that you want Termux runs upon its starts up.</p>
+<p>I use this config to change the default Termux dir to my work place dir, and add some alias commands.</p>
+<p>For example, append these commands to <code>~/.bash_profile</code>:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">echo</span> -e <span class="s1">&#39;Be midful&#39;</span>
+cal<span class="p">;</span>
+<span class="nb">cd</span> ~/storage/shared/myWorkPlace/
+
+<span class="nb">alias</span> <span class="nv">gitt</span><span class="o">=</span><span class="s1">&#39;git add .;git commit -m &quot;from Termux&quot;;git push;&#39;</span>
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>Note: Android <code>/sdcard/</code> does not fully support chmod, (partally in <code>/data/media/</code>).</li>
+</ul>
+<p>So you can not run <code>./file.sh</code> directly. You need to run <code>sh ./file.sh</code>. </p>
+<h3 id="nanorc">~/.nanorc</h3>
+<p>See .nanorc content in this respo</p>
+<h3 id="vimrc">~/.vimrc</h3>
+<p>See .vimrc content in this respo</p>
+<h1 id="note-when-installing-package">Note when installing package</h1>
+<p>Sometimes when you install a <code>&lt;package name&gt;</code>, it may say that package is not available (mainly because of Internet connection), don't give up easily, you may try again with these commands:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pkg update
+pkg search &lt;package name&gt;
+pkg install &lt;package name&gt;
+</code></pre></div>
+</td></tr></table>
+<h1 id="some-useful-packages">Some useful packages</h1>
+<p>Install them one by one with this partten: <code>pkg install &lt;package name&gt;</code>.</p>
+<p>Or you can put them all together in one command: <code>pkg install &lt;packages name&gt; &lt;package name&gt;</code></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git
+python
+nodejs
+php-apache
+nano
+vim-python
+wget
+curl
+rsync
+ripgrep
+poppler
+</code></pre></div>
+</td></tr></table>
+<p>All in one command:</p>
+<p><code>pkg install git python nodejs php-apache nano vim-python wget curl rsync ripgrep poppler</code></p>
+<h1 id="notes-guide">Notes &amp; Guide</h1>
+<h2 id="openssh-generate-and-add-ssh-with-openssh">openssh - generate and add ssh with openssh</h2>
+<p><code>pkg install openssh</code></p>
+<ul>
+<li>Create ~/.ssh dir to store your ssh keys, normally openssh will auto create this dir for you.</li>
+</ul>
+<p><code>mkdir -p ~/.ssh</code></p>
+<ul>
+<li>Generate ssh key:</li>
+</ul>
+<p><code>ssh-keygen -t rsa -b 4096 -C "email@example.com"</code></p>
+<ul>
+<li>Choose default location to store this key, provide passphrase</li>
+</ul>
+<p><code>eval "$(ssh-agent -s)"</code></p>
+<ul>
+<li>Then immediately run
+<code>ssh-add -k ~/.ssh/id_rsa</code></li>
+</ul>
+<h2 id="git">Git</h2>
+<p><code>pkg install git</code></p>
+<h3 id="set-up">Set up</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Panmux Android&quot;</span>
+
+git config --global user.email <span class="s2">&quot;email@example.com&quot;</span>
+
+git config --global core.editor nano
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>You can add ssh public key to your Github account: <a href="https://github.com/settings/ssh/new">https://github.com/settings/ssh/new</a></li>
+</ul>
+<h2 id="rg-ripgrep">rg RIPGREP</h2>
+<ul>
+<li>This grep tool is much faster than the ordinary grep. It supports Regex also.</li>
+</ul>
+<p><code>pkg install ripgrep</code></p>
+<p>This command will search for <code>keyword</code> in the entire current dir (including sub dirs).</p>
+<p>It is really fast.</p>
+<p><code>rg keyword</code></p>
+<h2 id="pdftotxt-pkg-install-poppler">pdftotxt (pkg install poppler)</h2>
+<p>The command will be <code>pdftotxt -enc UTF-8 inputfile.pdf</code>.</p>
+<p>I use this to convert pdf files to txt which allow me to do index for full text search later. </p>
+<p>Sometimes, I also use <code>rg keyword</code> to quickly look for a keyword in many txt files inside the dir (and its subdirs also).</p>
+<p>You can write a bash/shell script to do bulk convert:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1"># Credit: https://gist.github.com/tpaskhalis/214c3976ac08cb809d846e01135d9f5f</span>
+<span class="c1"># Convert all pdf in FOLDER  (and its subdirs) to txt</span>
+
+<span class="nv">FOLDER</span><span class="o">=</span>/storage/ABC-SDCARD/Android/data/com.termux/files/_eBooks/
+
+find <span class="s2">&quot;</span><span class="nv">$FOLDER</span><span class="s2">&quot;</span> -name <span class="s1">&#39;*.pdf&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i<span class="p">;</span>
+<span class="k">do</span>
+  <span class="nb">echo</span> <span class="s2">&quot;Processing </span><span class="nv">$i</span><span class="s2">&quot;</span>
+  pdftotext -enc UTF-8 <span class="s2">&quot;</span><span class="nv">$i</span><span class="s2">&quot;</span>
+<span class="k">done</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="vim-python">vim-python</h2>
+<ul>
+<li>On Termux I mainly use nano to edit files. Sometimes I also use <code>vim-python</code> instead of <code>vim</code>.</li>
+</ul>
+<p>This package will enable <code>vim</code> with <code>python</code>, which allow us tp install many powerful python-powered plugins.</p>
+<ul>
+<li>Should use plugin manager for vim, here I use <code>vim plug</code> (search it on Github).</li>
+</ul>
+<p>Add plugins that you want to install to <code>~/.vimrc</code>.</p>
+<ul>
+<li>Useful plugins: YouCompleteMe (for auto completion, search it on github, and should clone to the <code>~/.vim/plugged</code> after that cd to YouCompleteMe and install mannualy with this command: <code>python3 install.py --ts-completer</code></li>
+</ul>
+<p>(This plugin is too big to install via vim plugin.)</p>
+<p>Note
+<code>--ts-completer</code> is for Javascript family, you can add orther languages at the same time too.</p>
+<p>In <code>~/.vimrc</code> I still keep the install command, for later update:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="s2">&quot; Plugin manager vim-plug https://github.com/junegunn/vim-plug</span>
+<span class="s2">  call plug#begin(&#39;~/.vim/plugged&#39;)</span>
+
+<span class="s2">  Plug &#39;ycm-core/YouCompleteMe&#39;, { &#39;do&#39;: &#39;./install.py --ts-completer&#39; }</span>
+<span class="s2">&quot;</span> Should git clone and install manually with python3 install.py --ts-completer
+<span class="s2">&quot; --ts-completer is more updated than the tern one</span>
+
+<span class="s2">  call plug#end()</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="nodejs-packages">Nodejs packages</h2>
+<p>Some useful packages. Install these with <code>npm i -g install &lt;package name&gt;</code></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>express
+http-server
+live-server
+epub-gen
+prettier
+</code></pre></div>
+</td></tr></table>
+<h2 id="python-packages">Python packages</h2>
+<p>Some useful packages. Install these with <code>pip3 install &lt;package name&gt;</code></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>bs4
+eng-to-ipa
+</code></pre></div>
+</td></tr></table>
+<h2 id="to-install-java-on-termux">To install java on Termux</h2>
+<p>Install via this bash:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pkg install wget
+
+wget https: //raw.githubusercontent.com/MasterDevX/java/master/installjava <span class="o">&amp;&amp;</span> bash installjava
+</code></pre></div>
+</td></tr></table>
+<p>When the installation is finished without complaining any errors, and if you get error when running <code>java -version</code></p>
+<p>Then try to install tsu (root permission required) then run again with
+<code>pkg install tsu</code></p>
+<p>Then</p>
+<p><code>sudo java --version</code></p>
+<p>Or another way is, also with root permission, trying this method:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1"># from https://github.com/MasterDevX/Termux-Java/issues/7#issuecomment-653526860</span>
+
+su
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets:<span class="nv">$PATH</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/data/data/com.termux/files/usr/lib
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p>If this does not work, you can remove these exports by using the below unset command</p>
+</li>
+<li>
+<p>To list all env, run <code>env</code>, you should see a list of env</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">unset</span> PATH
+<span class="nb">unset</span> LD_LIBRARY_PATH
+</code></pre></div>
+</td></tr></table>
+<p>To auto set this env variables on startup of bash, place the command:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>export PATH=/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets:$PATH
+
+export LD_LIBRARY_PATH=/data/data/com.termux/files/usr/lib
+</code></pre></div>
+</td></tr></table>
+<p>to<code>/etc/profile.d/myprofile.sh</code></p>
+<ul>
+<li>To run a .jar file you can try this command:</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>sudo java -Xmx512M -Xms512M -jar filename.jar
+</code></pre></div>
+</td></tr></table>
+<blockquote>
+<p>-Xmx512M and -Xms512M are to do some settings related to heap size. Google them to learn more.</p>
+</blockquote>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="2020-11-02-build-apk-online/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2020 11 02 build apk online
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

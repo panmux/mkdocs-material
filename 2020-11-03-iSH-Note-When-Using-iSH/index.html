@@ -1,0 +1,611 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://panmux.github.io/pnote/2020-11-03-iSH-Note-When-Using-iSH/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Notes When Using iSH on iPadOS - pnote</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#notes-when-using-ish-on-ipados" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://panmux.github.io/pnote" title="pnote" class="md-header-nav__button md-logo" aria-label="pnote">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            pnote
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Notes When Using iSH on iPadOS
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://panmux.github.io/pnote" title="pnote" class="md-nav__button md-logo" aria-label="pnote">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    pnote
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      2020-11-03 Notes - When Using Termux On Android
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../2020-11-02-build-apk-online/" class="md-nav__link">
+      2020 11 02 build apk online
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Notes When Using iSH on iPadOS
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../2020-11-15-Git%20server%20on%20Android/" class="md-nav__link">
+      Set up a Git server on Android
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../2020-11-15-vim-python_termux-youcompleteme-how-to/" class="md-nav__link">
+      2020 11 15 vim python termux youcompleteme how to
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Fix%20module_not_found%20nodejs%20installed%20via%20nvm%20on%20Ubuntu/" class="md-nav__link">
+      Fix module_not_found nodejs installed via nvm on Ubuntu 20.04.md
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../To%20install%20Eclipse%20on%20Ubuntu%2020.04/" class="md-nav__link">
+      Install Eclipse by installer package on Ubuntu 20.04
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mkdocs-material/" class="md-nav__link">
+      Git page with mkdocs-material
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="notes-when-using-ish-on-ipados">Notes When Using iSH on iPadOS</h1>
+<p>After using iSH on iPad for quite a while, I have some notes.</p>
+<h1 id="ish-is-now-available-on-app-store">iSH is now available on App Store</h1>
+<p>Just in case you are still using iSH through TestFight, it is to inform you that it is now available on App Store.</p>
+<h1 id="trick-to-run-ish-background">Trick to run iSH background</h1>
+<ul>
+<li>Note: </li>
+<li>
+<p>Using <code>cat /dev/location</code> and turned on location service will consume more battery.</p>
+</li>
+<li>
+<p>You may not need this trick at all, you can simply <code>Split View</code> iSH over Safari to achieve the same effect.</p>
+</li>
+<li>
+<p>You can also use <code>phpwin</code> app on iPad for opening offline website.</p>
+</li>
+</ul>
+<p>However, if you really need to run it background, for example with python module <code>http.server</code>, try this:</p>
+<ul>
+<li>
+<p>Create and chmod executable file <code>runBackground.sh</code></p>
+</li>
+<li>
+<p>Add these:</p>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>cat /dev/location &gt; /dev/null <span class="p">&amp;</span>
+python3 -m http.server ~/www/
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p>Now turn on your device Location service in the device setting, and allow iSH use your location while running.</p>
+</li>
+<li>
+<p>Run <code>sh runBacground.sh</code></p>
+</li>
+<li>
+<p>Now open Safari and access: <code>http://localhost:8000/</code>
+Change the port <code>8080</code> accordingly to your case. You should stay with Safari while iSH is still running.</p>
+</li>
+</ul>
+<h1 id="php-and-composer">php and composer</h1>
+<p>To install php and composer on iSH:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>apk add php7 php7-phar php7-mbstring php7-json php7-openssl
+</code></pre></div>
+</td></tr></table>
+<p>Create and chmod 777 <code>installComposer.sh</code> with the below bash script:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1"># This snippet is from: </span>
+https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
+
+<span class="c1">#!/bin/sh</span>
+
+<span class="nv">EXPECTED_CHECKSUM</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>wget -q -O - https://composer.github.io/installer.sig<span class="k">)</span><span class="s2">&quot;</span>
+php -r <span class="s2">&quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot;</span>
+<span class="nv">ACTUAL_CHECKSUM</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>php -r <span class="s2">&quot;echo hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;);&quot;</span><span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$EXPECTED_CHECKSUM</span><span class="s2">&quot;</span> !<span class="o">=</span> <span class="s2">&quot;</span><span class="nv">$ACTUAL_CHECKSUM</span><span class="s2">&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+    &gt;<span class="p">&amp;</span><span class="m">2</span> <span class="nb">echo</span> <span class="s1">&#39;ERROR: Invalid installer checksum&#39;</span>
+    rm composer-setup.php
+    <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">fi</span>
+
+php composer-setup.php --quiet
+<span class="nv">RESULT</span><span class="o">=</span><span class="nv">$?</span>
+rm composer-setup.php
+<span class="nb">exit</span> <span class="nv">$RESULT</span>
+</code></pre></div>
+</td></tr></table>
+<p>To have the command composer available globally, we move composer.phar to:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>mv composer.phar /usr/local/bin/composer
+</code></pre></div>
+</td></tr></table>
+<h1 id="webserver-php-with-apache">webserver php with apache</h1>
+<p>An easy ways to install webserver php with apache is via this auto script:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git clone https://github.com/timtim8461/ish-webserver-setup.git
+<span class="nb">cd</span> ish-webserver-setup/
+chmod <span class="m">777</span> *.sh
+chmod +x setup.sh
+chmod +x start.sh 
+./setup.sh
+</code></pre></div>
+</td></tr></table>
+<h1 id="find-phpini-and-install-sqlite3-extension">Find php.ini and install SQLite3 extension</h1>
+<p>Enable SQLite3 extension. SQLite3 is shipped with php, so we just need to enable it in the php.ini.</p>
+<p>However on iSH we may need to install it manually:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>p:~# apk search sqlite3
+p:~# apk add php7-sqlite3
+</code></pre></div>
+</td></tr></table>
+<p>We can find php.ini location with these commands:</p>
+<ul>
+<li>The better way (faster) is:</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>php -i <span class="p">|</span> grep php.ini
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>Or slower one:</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>p:~# <span class="nb">cd</span> /
+p:/# find . -name <span class="s1">&#39;php.ini&#39;</span>
+./etc/php7/php.ini
+</code></pre></div>
+</td></tr></table>
+<p>And now we can edit it with nano:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>p:/# nano /etc/php7/php.ini
+</code></pre></div>
+</td></tr></table>
+<p>In nano, press Ctrl + w and find sqlite3 and uncomment ; to enable it. We will get something:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">;extension=sockets</span>
+<span class="na">extension</span><span class="o">=</span><span class="s">sqlite3</span>
+<span class="c1">;extension=tidy</span>
+</code></pre></div>
+</td></tr></table>
+<p>You may need to restart your server to get SQLite3 extension working.</p>
+<p>Check again</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>p:~# php -i <span class="p">|</span> grep php.ini
+
+PHP Warning:  Module <span class="s1">&#39;sqlite3&#39;</span> already loaded in Unknown on line <span class="m">0</span>
+Configuration File <span class="o">(</span>php.ini<span class="o">)</span> <span class="nv">Path</span> <span class="o">=</span>&gt; /etc/php7
+Loaded Configuration <span class="nv">File</span> <span class="o">=</span>&gt; /etc/php7/php.ini
+</code></pre></div>
+</td></tr></table>
+<h1 id="java-javac">Java javac</h1>
+<p>Install</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">apk</span> <span class="n">search</span> <span class="n">openjdk</span>
+<span class="n">apk</span> <span class="n">add</span> <span class="n">openjdk8</span>
+</code></pre></div>
+</td></tr></table>
+<p>If running <code>java -version</code> yields error, try this command:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>java -mx512m -version
+</code></pre></div>
+</td></tr></table>
+<p>You can now try running a jar file:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>java -mx512m -jar test.jar
+</code></pre></div>
+</td></tr></table>
+<p>If running <code>javac -version</code> yields error</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>javac -version
+ash: javac: not found
+</code></pre></div>
+</td></tr></table>
+<p>Try to set these paths:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>##### 
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+export PATH=&quot;$JAVA_HOME/bin:${PATH}&quot;
+</code></pre></div>
+</td></tr></table>
+<p>You can put these commands to:</p>
+<p><code>/etc/profile.d/profile.sh</code></p>
+<p>to set these vars automatically every time you start up the terminal.</p>
+<ul>
+<li>If you have a newer version, try updating YOURversion in the above command, like <code>/usr/lib/jvm/YOURversion</code></li>
+</ul>
+<p>If things go smooth, you will get response something like:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>javac -version
+javac <span class="m">1</span>.8.0_252
+</code></pre></div>
+</td></tr></table>
+<p>To remove these above path</p>
+<p>List env with <code>export</code> or <code>env</code></p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>env
+export
+</code></pre></div>
+</td></tr></table>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>export
+unset JAVA_HOME
+unset PATH
+</code></pre></div>
+</td></tr></table>
+<h1 id="pynvim">pynvim</h1>
+<p>On iSH (iPad) If pip3 install pynvim yields errors (greenlet)</p>
+<p>```include/python3.8/Python.h:11:10: fatal  error: limits.h: No such file or directory
+    #include <limits.h>
+                        ^
+    compilation terminated.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Fix:
+====
+
+
+``` bash
+apk add --no-cache gcc linux-headers musl-dev
+</code></pre></div>
+</td></tr></table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../2020-11-02-build-apk-online/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                2020 11 02 build apk online
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../2020-11-15-Git%20server%20on%20Android/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Set up a Git server on Android
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
